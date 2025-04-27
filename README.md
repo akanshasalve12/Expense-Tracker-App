@@ -5,7 +5,7 @@ A full-stack Expense Tracker application built with React, Node.js, Express, and
 
 ## 🚀 Live Demo
 
-[Visit the Website](expense-tracker-app.vercel.app)  
+[Visit the Website]((https://expense-tracker-app-snowy-eta.vercel.app/))  
 
 ## 🛠️ Tech Stack
 
