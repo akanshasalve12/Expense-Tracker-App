@@ -1,13 +1,13 @@
-Expense Tracker App 💸
+Expense Tracker App 
 
 A full-stack Expense Tracker application built with React, Node.js, Express, and MongoDB to help users manage and visualize their expenses effectively.
 
 
-## 🚀 Live Demo
+ Live Demo
 
 [Visit the Website]((https://expense-tracker-app-snowy-eta.vercel.app/))  
 
-## 🛠️ Tech Stack
+ Tech Stack
 
 Frontend: React.js, Axios, React Router, Chart.js
 Backend: Node.js, Express.js
@@ -15,7 +15,7 @@ Database: MongoDB (Atlas)
 Deployment: Vercel (Frontend), Localhost (Backend)
 
 
-## ✨ Features
+ Features
 
 - Add new expenses (amount, category, description, date)
 - Edit or delete existing expenses
@@ -28,7 +28,7 @@ Deployment: Vercel (Frontend), Localhost (Backend)
 
 ---
 
-## 🧩 Folder Structure
+ Folder Structure
 
 ```
 expense-tracker-app/
@@ -95,33 +95,26 @@ expense-tracker-app/
 
 ---
 
-## 📝 Future Improvements
+ Future Improvements
 
 - Implement User Authentication
 - Add Dark Mode
 - Add Expense Filter (by month, category)
 - Deploy backend using Railway / Render
 
----
 
-## 📸 Screenshots
 
-*(Add some screenshots of your frontend UI and charts here!)*
-
----
-
-## 🤝 Contributing
+ Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 ---
 
-## 📬 Contact
+ Contact
 
 - **Akansha Salve**  
 - LinkedIn Profile-(([https://www.linkedin.com/in/akankshasalve12/]))  
 - Portfolio Website- (https://akanshasalveportfolio.my.canva.site/)
 
 
-# ⭐ Thank you for visiting! ⭐
 
