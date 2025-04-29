@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import ExpenseForm from './components/ExpenseForm';
-import ExpenseList from './components/ExpenseList';
-import API from './services/api';
+import ExpenseForm from '../components/ExpenseForm';
+import ExpenseList from '../components/ExpenseList';
+import API from '../services/api';
 
-const Home = () => {
+const HomePage = () => {
   const [expenses, setExpenses] = useState([]);
 
   const fetchExpenses = async () => {
@@ -27,4 +27,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;

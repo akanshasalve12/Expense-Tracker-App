@@ -1,31 +1,34 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
-// Import your components or pages
+// Pages
 import HomePage from './pages/HomePage';
 import ExpensesPage from './pages/ExpensesPage';
 import AddExpensePage from './pages/AddExpensePage';
+import ExpenseDashboard from './components/ExpenseDashboard';
+import ExpenseForm from './components/ExpenseForm';
+import ExpenseList from './components/ExpenseList';
 
 function App() {
   return (
     <Router>
-      <div>
-        {/* You can add navigation links here if needed */}
-        <nav>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/expenses">Expenses</a></li>
-            <li><a href="/add-expense">Add Expense</a></li>
-          </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/expenses">Expenses</Link></li>
+          <li><Link to="/add-expense">Add Expense</Link></li>
+          <li><Link to="/dashboard">Dashboard</Link></li>
+        </ul>
+      </nav>
 
-        {/* Define routes here */}
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/expenses" element={<ExpensesPage />} />
-          <Route path="/add-expense" element={<AddExpensePage />} />
-        </Routes>
-      </div>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/expenses" element={<ExpensesPage />} />
+        <Route path="/add-expense" element={<AddExpensePage />} />
+        <Route path="/dashboard" element={<ExpenseDashboard />} />
+        <Route path="/expense-form" element={<ExpenseForm />} />
+        <Route path="/expense-list" element={<ExpenseList />} />
+      </Routes>
     </Router>
   );
 }

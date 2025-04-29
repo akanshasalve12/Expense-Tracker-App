@@ -1,10 +1,10 @@
 import express from 'express';
 import cors from 'cors';
 import mongoose from 'mongoose';
-import dotenv from 'dotenv'; // <-- ADD THIS LINE
+import dotenv from 'dotenv'; 
 import expenseRoutes from './routes/expenseRoutes.js';
 
-dotenv.config(); // <-- ADD THIS LINE
+dotenv.config(); 
 
 const app = express();
 

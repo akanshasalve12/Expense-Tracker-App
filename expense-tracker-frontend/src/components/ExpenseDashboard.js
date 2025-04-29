@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import API from '../services/api';
+import '../Dashboard.css';
 
 const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#AA336A'];
 
@@ -46,12 +47,12 @@ const Dashboard = () => {
   }
 
   return (
-    <div style={{ marginTop: '50px' }}>
+    <div className="dashboard-container">
       <h2>Dashboard</h2>
 
-      <div style={{ display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap' }}>
+      <div className="chart-container">
         {/* Pie Chart */}
-        <div style={{ width: '45%', minWidth: '300px', height: '300px' }}>
+        <div className="chart-wrapper">
           <h3>Expense by Category</h3>
           <ResponsiveContainer width="100%" height="100%">
             <PieChart>
@@ -73,7 +74,7 @@ const Dashboard = () => {
         </div>
 
         {/* Bar Chart */}
-        <div style={{ width: '45%', minWidth: '300px', height: '300px' }}>
+        <div className="chart-wrapper">
           <h3>Monthly Expenses</h3>
           <ResponsiveContainer width="100%" height="100%">
             <BarChart data={monthlyData}>
